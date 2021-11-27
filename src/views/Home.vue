@@ -8,21 +8,24 @@
             </div>
         </div>
 <!--        <HelloWorld msg="Welcome to Your Vue.js App"/>-->
+        <HelloWorld msg="Welcome to Your Vue.js App"/>
+        <test></test>
     </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import { isIE } from '@tools';
-// import HelloWorld from '@/components/HelloWorld.vue';
+import HelloWorld from '@components/HelloWorld';
 import { mapMutations, mapState } from 'vuex';
 import { APP_SPIN } from '@types';
+import test from './Test';
 
 export default {
     name: 'Home',
-    // components: {
-    //     HelloWorld,
-    // },
+    components: {
+        HelloWorld,
+        test,
     data() {
         return {
         };

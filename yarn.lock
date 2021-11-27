@@ -3643,7 +3643,7 @@ eslint-import-resolver-node@^0.3.4, eslint-import-resolver-node@^0.3.6:
     debug "^3.2.7"
     resolve "^1.20.0"
 
-eslint-import-resolver-webpack@^0.13.0:
+eslint-import-resolver-webpack@^0.13.0, eslint-import-resolver-webpack@^0.13.2:
   version "0.13.2"
   resolved "https://registry.npmmirror.com/eslint-import-resolver-webpack/download/eslint-import-resolver-webpack-0.13.2.tgz?cache=0&sync_timestamp=1634713649080&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Feslint-import-resolver-webpack%2Fdownload%2Feslint-import-resolver-webpack-0.13.2.tgz#fc813df0d08b9265cc7072d22393bda5198bdc1e"
   integrity sha1-/IE98NCLkmXMcHLSI5O9pRmL3B4=
