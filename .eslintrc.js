@@ -29,16 +29,4 @@ module.exports = {
             'vue': 'never'
         }]
     },
-    settings: {
-        'import/resolver': {
-            alias: {
-                map: [
-                    ['@', './src'],
-                    ['@assets', './src/assets'],
-                    ['@types', './src/store'],
-                    ['@tools', './src/utils/tools'],
-                ]
-            }
-        }
-    }
 };

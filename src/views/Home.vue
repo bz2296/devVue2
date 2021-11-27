@@ -2,7 +2,6 @@
     <div class="home">
         <img alt="Vue logo" src="../assets/logo.png">
         <div>
-            数据是 {{showSpin}}
             <div>
                 <button @click="add"></button>
             </div>
@@ -17,8 +16,6 @@
 // @ is an alias to /src
 import { isIE } from '@tools';
 import HelloWorld from '@components/HelloWorld';
-import { mapMutations, mapState } from 'vuex';
-import { APP_SPIN } from '@types';
 import test from './Test';
 
 export default {
@@ -26,6 +23,7 @@ export default {
     components: {
         HelloWorld,
         test,
+    },
     data() {
         return {
         };
@@ -34,13 +32,10 @@ export default {
         console.log('asda', isIE);
     },
     methods: {
-        ...mapMutations([APP_SPIN]),
         add() {
-            this[APP_SPIN](true);
         },
     },
     computed: {
-        ...mapState(['app']),
     },
 };
 </script>

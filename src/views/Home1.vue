@@ -11,7 +11,7 @@
 
 <script>
 import { mapMutations, mapState } from 'vuex';
-import { APP_SPIN } from '@types';
+import { APP_SPIN } from '@store/types';
 
 export default {
     name: 'Home',

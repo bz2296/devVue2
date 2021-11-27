@@ -24,7 +24,7 @@ module.exports = {
             .set('@',resolve('src'))
             .set('@components',resolve('src/components'))
             .set('@assets',resolve('src/assets'))
-            .set('@types',resolve('src/store'))
+            .set('@store',resolve('src/store'))
             .set('@utils',resolve('src/utils/'))
             .set('@tools',resolve('src/utils/tools.js'))
     }
