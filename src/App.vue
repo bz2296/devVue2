@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <div id="nav">
+        consda
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div>

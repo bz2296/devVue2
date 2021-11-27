@@ -18,4 +18,16 @@ module.exports = {
         'no-unused-vars': 'warn',
         'import/no-unresolved': 0
     },
+    settings: {
+        'import/resolver': {
+            alias: {
+                map: [
+                    ['@', './src'],
+                    ['@assets', './src/assets'],
+                    ['@types', './src/store'],
+                    ['@tools', './src/utils/tools'],
+                ]
+            }
+        }
+    }
 };
