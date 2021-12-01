@@ -11,11 +11,16 @@ module.exports = {
         host: 'cyh.study.com',
         port: 3000,
         proxy: {
-            '/test': {
-                target: process.env.VUE_APP_API_PROXY,
+            '/': {
+                target: 'http://localhost:9000',
                 secure: false,
                 changeOrigin: true,
             },
+            // '/': {
+            //     target: process.env.VUE_APP_API_PROXY,
+            //     secure: false,
+            //     changeOrigin: true,
+            // },
         },
     },
     chainWebpack:(config)=>{

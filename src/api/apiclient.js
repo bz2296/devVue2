@@ -1,8 +1,9 @@
 import axios from 'axios';
 import qs from 'qs';
 
-import store, { APP_SPIN } from '@types';
+import { APP_SPIN } from '@store/types';
 import { parseRestfulUrl, isIE } from '@utils/tools';
+import store from '@store';
 
 const methods = ['get', 'post', 'put', 'patch', 'delete'];
 const isIe = isIE();
@@ -36,7 +37,8 @@ export default class ApiClient {
             document.getElementsByTagName('head')[0].appendChild(jsonp);
         });
 
-        methods.forEach(method => this[method] = async (path, axiosConfig, setting = {}) => {
+        methods.forEach(method => {
+            this[method] = async (path, axiosConfig, setting = {}) => {
                 const {
                     isUpload,
                     enableSpin = true,
@@ -95,7 +97,8 @@ export default class ApiClient {
 
                         return Promise.reject(error);
                     });
-            });
+            };
+        });
     }
 
     static parseJsonpParams(params) {
